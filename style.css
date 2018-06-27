@@ -1,0 +1,132 @@
+/* Общие настройки */
+body {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, p, ul, a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #fff;
+ }
+h1 {
+	font-size: 44px;
+}
+ul {
+	display: inline-block;
+	list-style-type: none;
+}
+/* Блок 1 - меню */
+.page__nav {
+	background-color: #4c97a2;
+	min-height: 90px;
+}
+#title, .menu {
+	display: inline-block;
+	margin-left: 435px;
+	margin-top: 22px;
+}
+.menu__item {
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.page__nav a:hover {
+	color:red;
+}
+.page__nav a:active {
+	color:black;
+}
+/* Блок 2 - баннер */
+.page__banner {
+	background-image: url(banner1.png);
+	height: auto;
+	background-size: 100%;
+	background-repeat: repeat;
+}
+.page__banner h1 {
+	padding-top: 130px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 150px;
+}
+.button {
+	text-align: center;
+	padding-bottom: 150px;
+}
+a.button7 {
+  display: inline-block;
+  background: rgba(255,255,255,.2); 
+  color: white;
+  text-decoration: none;
+  user-select: none;
+  outline: none;
+  border: 3px solid #afb1b4;
+  border-radius: 8px;
+  transition: 0.2s;
+  padding: 20px 130px;
+  font-size: 30px;
+} 
+a.button7:hover { 
+	background: rgba(255,255,255,.2);
+	color:red;
+}
+a.button7:active {
+	background: white;
+	color:black; 
+}
+/* Блок 3 - портфолио  */
+.page__portfolio {
+	min-height: 445px;
+	padding-top: 90px;
+}
+.portfolio__info {
+	text-align: center;
+	width: 630px;
+	margin-left: 620px;
+}
+.portfolio__info p {
+	padding-top: 50px;
+	color:#4c505d;
+	font-size: 18px;
+}
+.portfolio__icon {
+	margin-left: 620px;
+	padding-top: 80px;
+}
+.portfolio__icon-item {
+	margin-left: 130px;
+}
+#chapter1 {
+	font-size: 35px;
+	color: #4c505d !important;
+}
+/* Блок 4 - Обо мне */
+.page__about {
+	background-color: #00cc99;
+	height: 480px;
+	color: #e4e4e4;
+}
+.about__info {
+	text-align: center;
+	width: 800px;
+	margin-left: 550px;
+	font-size: 24px;
+	line-height: 33px;
+}
+.about__photo-name {
+	padding-top: 95px;
+	margin-left: 830px;
+	padding-bottom: 60px;
+}
+.about__photo-name h2, img {
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: text-top;
+}
+.about__photo-name h2 {
+	margin-left: 40px;
+}
