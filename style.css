@@ -1,7 +1,7 @@
-/* Общие настройки */
+/* Основные изменения каскадной таблицы */
 body {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 h1, h2, p, ul, a {
 	margin: 0;
@@ -9,124 +9,120 @@ h1, h2, p, ul, a {
 	text-decoration: none;
 	color: #fff;
  }
-h1 {
-	font-size: 44px;
-}
-ul {
+ ul {
 	display: inline-block;
 	list-style-type: none;
 }
-/* Блок 1 - меню */
-.page__nav {
-	background-color: #4c97a2;
-	min-height: 90px;
+/* Блок - header-nav */
+.header-nav {
+	background-color: #4d97a3;
+	min-height: 80px;
 }
-#title, .menu {
+.header-nav h1 {
+	letter-spacing: 3px;
+}
+.header-nav a:hover {
+	color: red;
+}
+.title, .menu {
 	display: inline-block;
-	margin-left: 435px;
-	margin-top: 22px;
+	margin: 1% 0 0 23%;
 }
-.menu__item {
-	display: inline;
-	margin-left: 5px;
-	margin-right: 5px;
+.menu-item {
+	display: inline-block;
+	opacity: 0.7;
+	margin: 0 6px;
 	text-transform: uppercase;
-	font-size: 20px;
-}
-.page__nav a:hover {
-	color:red;
-}
-.page__nav a:active {
-	color:black;
-}
-/* Блок 2 - баннер */
-.page__banner {
-	background-image: url(banner1.png);
-	height: auto;
-	background-size: 100%;
-	background-repeat: repeat;
-}
-.page__banner h1 {
-	padding-top: 130px;
-	text-align: center;
-	text-transform: uppercase;
-	padding-bottom: 150px;
-}
-.button {
-	text-align: center;
-	padding-bottom: 150px;
-}
-a.button7 {
-  display: inline-block;
-  background: rgba(255,255,255,.2); 
-  color: white;
-  text-decoration: none;
-  user-select: none;
-  outline: none;
-  border: 3px solid #afb1b4;
-  border-radius: 8px;
-  transition: 0.2s;
-  padding: 20px 130px;
-  font-size: 30px;
-} 
-a.button7:hover { 
-	background: rgba(255,255,255,.2);
-	color:red;
-}
-a.button7:active {
-	background: white;
-	color:black; 
-}
-/* Блок 3 - портфолио  */
-.page__portfolio {
-	min-height: 445px;
-	padding-top: 90px;
-}
-.portfolio__info {
-	text-align: center;
-	width: 630px;
-	margin-left: 620px;
-}
-.portfolio__info p {
-	padding-top: 50px;
-	color:#4c505d;
 	font-size: 18px;
 }
-.portfolio__icon {
-	margin-left: 620px;
-	padding-top: 80px;
-}
-.portfolio__icon-item {
-	margin-left: 130px;
-}
-#chapter1 {
-	font-size: 35px;
-	color: #4c505d !important;
-}
-/* Блок 4 - Обо мне */
-.page__about {
-	background-color: #00cc99;
-	height: 480px;
-	color: #e4e4e4;
-}
-.about__info {
+/* Блок - page__banner */
+.page__banner {
+	background: url(img/banner1.png) repeat-x;
+	background-size: 100%;
 	text-align: center;
+	padding: 180px 0;
+}
+.page__banner h1 {
+	text-transform: uppercase;
+	margin: 100px 0 150px 0;
+	font-size: 48px;
+	opacity: 0.7;
+}
+.button-read {
+	background: rgba(255,255,255,.1);
+	border: 3px solid #afb1b4;
+	border-radius: 10px;
+	padding: 20px 80px;
+	font-size: 28px;
+	font-weight: bold;
+}
+a.button-read:hover {
+	color: red;
+}
+/* Блок - page__info */
+.page__info {
+	background: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+.inf-title, .inf-text {
+	color: #898c93;
+	padding: 40px 0;
+}
+.inf-title {
+	font-size: 42px;
+}
+.inf-text {
+	font-size: 18px;
+}
+.ico-item {
+	padding: 60px 70px;
+}
+/* Блок - page__porfolio */
+.page__portfolio {
+	background: #45bb86;
+	padding: 100px 0;
+	text-align: center;
+}
+.portfolio-inf {
 	width: 800px;
-	margin-left: 550px;
-	font-size: 24px;
-	line-height: 33px;
+	text-align: left;
+	vertical-align: middle;
+	margin: 0 auto;
+	letter-spacing: 3px;
+	padding: 20px 0;
+	font-size: 22px;
 }
-.about__photo-name {
-	padding-top: 95px;
-	margin-left: 830px;
-	padding-bottom: 60px;
+/* Секция - contact me */
+.page__contact {
+	background: url(img/banner2.png) repeat-x;
+	background-size: 100%;
+	padding: 100px 0;
 }
-.about__photo-name h2, img {
+.feedback {
+	margin: 0 47%;
+	position: relative;
+}
+.circle {
+	position: absolute;
+	border: 2px solid whitesmoke;
+	border-radius: 50%;
+	height: 290px;
+	width: 290px;
+	margin: -2% 44%;
+	background: #fff;
+}
+input, textarea {
+	display: block;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+/* Секция - footer */
+footer {
+	min-height: 25px;
 	text-align: center;
 	text-transform: uppercase;
-	display: inline-block;
-	vertical-align: text-top;
-}
-.about__photo-name h2 {
-	margin-left: 40px;
+	font-size: 18px;
+	background: #45bb86;
+	padding: 15px 0;
 }
